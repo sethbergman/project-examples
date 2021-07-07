@@ -9,6 +9,7 @@ To set up Jenkins to use the example, read [this](https://github.com/jfrog/proje
 * The [conan-example](conan-example) resolves dependencies, deploys artifacts and publishes build-info to Artifactory for a Conan build.
 * The [declarative-example](declarative-example) demonstrates how to download, upload and publish build-info to Artifactory using a Declarative Pipeline script.
 * The [docker-push-example](docker-push-example) demonstrates how to push a docker image to Artifactory.
+* The [docker-pull-example](docker-pull-example) demonstrates how to pull a docker image from Artifactory.
 * The [dotnet-example](dotnet-example) resolves dependencies and publishes build-info to Artifactory for a .NET build.
 * The [exclude-patterns-download-example](exclude-patterns-download-example) demonstrates how to exclude certain files while downloading.
 * The [exclude-patterns-upload-example](exclude-patterns-upload-example) demonstrates how to exclude certain files while uploading.
@@ -18,9 +19,12 @@ To set up Jenkins to use the example, read [this](https://github.com/jfrog/proje
 * The [gradle-example-ci-server](gradle-example-ci-server) resolves dependencies, deploys artifacts and publishes build-info to Artifactory for a Gradle build. Unlike the [gradle-example](gradle-example), this examples assumes that the Gradle Artifactory Plugin in not applied to the Gradle build script.
 * The [gradle-example](gradle-example) resolves dependencies, deploys artifacts and publishes build-info to Artifactory for a Gradle build. Unlike the [gradle-example-ci-server](gradle-example-ci-server), this examples assumes that the Gradle Artifactory Plugin in already applied in the Gradle build script.
 * The [issues-collection-example](issues-collection-example) demonstrates how to collect the list of tracked project issues and add them to the build-info.
+* The [jfrog-distribution-example](jfrog-distribution-example) demonstrates how to create, update, sign, distribute, and delete a release bundle.
+* The [kaniko-example](kaniko-example) demonstrate how to collect build info for Docker images created by Kaniko.
 * The [maven-container-example](maven-container-example) demonstrates how to run Maven in a Docker container.
 * The [maven-deploy-example](maven-deploy-example) demonstrates how to defer the build artifacts deployment to a separate stage.
 * The [maven-example](maven-example) resolves dependencies, deploys artifacts and publishes build-info to Artifactory for a Maven build.
+* The [maven-jib-example](maven-example) demonstrates how to collect and publish build-info for a Maven JIB build.
 * The [npm-container-example](npm-container-example) demonstrates how to run npm in a Docker container.
 * The [npm-example](npm-example) resolves dependencies, deploys artifacts and publishes build-info to Artifactory for a npm build.
 * The [nuget-example](nuget-example) resolves dependencies and publishes build-info to Artifactory for a NuGet build.
