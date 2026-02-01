@@ -14,19 +14,8 @@
  * limitations under the License.
  */
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.+')
-    }
-    configurations.classpath {
-        resolutionStrategy {
-            cacheDynamicVersionsFor 0, 'seconds'
-            cacheChangingModulesFor 0, 'seconds'
-        }
-    }
+plugins {
+    id("com.jfrog.artifactory") version "5.+"
 }
 
 def javaProjects() {
@@ -40,7 +29,7 @@ allprojects {
     status = 'Integration'
     repositories {
         maven {
-            url "http://127.0.0.1:8081/artifactory/jcenter"
+            url "http://127.0.0.1:8081/artifactory/libs-release"
         }
     }
 }

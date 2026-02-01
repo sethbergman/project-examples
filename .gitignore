@@ -3,11 +3,8 @@
 *.iws
 *.iml
 atlassian*.xml
-maven-example/target
-maven-example/*/target
-gradle-example/build
-gradle-example/*/build
-gradle-example/*/*/build
+maven-examples/**/target
+gradle-examples/**/build
 _ReSharper*
 bin
 obj
@@ -17,3 +14,4 @@ packages
 *.tmp
 .idea
 .DS_Store
+node_modules
